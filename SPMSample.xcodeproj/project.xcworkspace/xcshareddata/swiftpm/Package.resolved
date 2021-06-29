@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "CustomTheme",
+        "repositoryURL": "https://github.com/AH-Studio-One/CustomTheme.git",
+        "state": {
+          "branch": "main",
+          "revision": "46190de476a9b7370ee56bdca677eeba3d21f4c0",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

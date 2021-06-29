@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		E0B01138268A2C33002CF378 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B01123268A2C30002CF378 /* ContentView.swift */; };
 		E0B01139268A2C33002CF378 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0B01124268A2C32002CF378 /* Assets.xcassets */; };
 		E0B0113A268A2C33002CF378 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0B01124268A2C32002CF378 /* Assets.xcassets */; };
+		E0B0114A268A2F0A002CF378 /* CustomTheme in Frameworks */ = {isa = PBXBuildFile; productRef = E0B01149268A2F0A002CF378 /* CustomTheme */; };
+		E0B01150268AF953002CF378 /* CustomTheme in Frameworks */ = {isa = PBXBuildFile; productRef = E0B0114F268AF953002CF378 /* CustomTheme */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0B01150268AF953002CF378 /* CustomTheme in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0B0114A268A2F0A002CF378 /* CustomTheme in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +55,7 @@
 				E0B0112B268A2C32002CF378 /* iOS */,
 				E0B01132268A2C32002CF378 /* macOS */,
 				E0B0112A268A2C32002CF378 /* Products */,
+				E0B01146268A2EC4002CF378 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +95,13 @@
 			path = macOS;
 			sourceTree = "<group>";
 		};
+		E0B01146268A2EC4002CF378 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,6 +118,9 @@
 			dependencies = (
 			);
 			name = "SPMSample (iOS)";
+			packageProductDependencies = (
+				E0B0114F268AF953002CF378 /* CustomTheme */,
+			);
 			productName = "SPMSample (iOS)";
 			productReference = E0B01129268A2C32002CF378 /* SPMSample.app */;
 			productType = "com.apple.product-type.application";
@@ -123,6 +138,9 @@
 			dependencies = (
 			);
 			name = "SPMSample (macOS)";
+			packageProductDependencies = (
+				E0B01149268A2F0A002CF378 /* CustomTheme */,
+			);
 			productName = "SPMSample (macOS)";
 			productReference = E0B01131268A2C32002CF378 /* SPMSample.app */;
 			productType = "com.apple.product-type.application";
@@ -153,6 +171,9 @@
 				Base,
 			);
 			mainGroup = E0B0111C268A2C30002CF378;
+			packageReferences = (
+				E0B01143268A2CB0002CF378 /* XCRemoteSwiftPackageReference "CustomTheme" */,
+			);
 			productRefGroup = E0B0112A268A2C32002CF378 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -333,7 +354,7 @@
 				PRODUCT_NAME = SPMSample;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -355,7 +376,7 @@
 				PRODUCT_NAME = SPMSample;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -439,6 +460,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E0B01143268A2CB0002CF378 /* XCRemoteSwiftPackageReference "CustomTheme" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AH-Studio-One/CustomTheme.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E0B01149268A2F0A002CF378 /* CustomTheme */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E0B01143268A2CB0002CF378 /* XCRemoteSwiftPackageReference "CustomTheme" */;
+			productName = CustomTheme;
+		};
+		E0B0114F268AF953002CF378 /* CustomTheme */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E0B01143268A2CB0002CF378 /* XCRemoteSwiftPackageReference "CustomTheme" */;
+			productName = CustomTheme;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E0B0111D268A2C30002CF378 /* Project object */;
 }
