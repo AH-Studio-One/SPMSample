@@ -4,4 +4,4 @@ https://user-images.githubusercontent.com/85871814/124146014-9f224800-da8d-11eb-
 
 # SPMSample
 
-Sample that uses Swift Package Manager to onboarding view with CustomTheme https://github.com/AH-Studio-One/CustomTheme
+Sample that uses Swift Package Manager to create some onboarding view with CustomTheme https://github.com/AH-Studio-One/CustomTheme
