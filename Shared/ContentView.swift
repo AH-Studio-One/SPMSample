@@ -13,14 +13,15 @@ struct ContentView: View {
         let theme1 = DemoTheme()
         let theme2 = DemoTheme(primaryColor: .blue,
                                secondaryColor: .pink,
-                               primaryFont: .largeTitle,
-                               secondaryFont: .caption2)
+                               primaryFont: .title,
+                               secondaryFont: .largeTitle)
 
-        let viewModel1 = SlideViewModel(title: "hello", subTitle: "SMP", theme: theme1)
-        let viewModel2 = SlideViewModel(title: "hello", subTitle: "SMP")
-        let viewModel3 = SlideViewModel(title: "hello", subTitle: "SMP", theme: theme2)
-        
-        OnboardingView(slideViewModels: [viewModel1, viewModel2, viewModel3])
+        let viewModel1 = SlideViewModel(title: "Create sample iOS Project", subTitle: "import https://github.com/AH-Studio-One/CustomTheme in Xcode/SwiftPackages/Add as a Swift Package", theme: theme1)
+        let viewModel2 = SlideViewModel(title: "Create your theme", subTitle: "implementing Theme protocol from CustomTheme swift package", theme: theme1)
+        let viewModel3 = SlideViewModel(title: "Create collection of SlideViewModels with custom theme. If you skip, default theme will be applied, like here).", subTitle: "Create OnboardingView(slideViewModels: [yourSlideVM1, yourSlideVM1,..])")
+        let viewModel4 = SlideViewModel(title: "Run the app! You have used an onboarding module using SPM", subTitle: "by defining Your custom theme", theme: theme2)
+
+        OnboardingView(slideViewModels: [viewModel1, viewModel2, viewModel3, viewModel4])
     }
 }
 
